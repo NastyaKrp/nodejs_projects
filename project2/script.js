@@ -19,3 +19,8 @@ async function startApp() {
 }
 
 startApp();
+
+//нужно создать две роли после запуска
+//docker exec -it mongo mongosh --username nastya --password nastya --authenticationDatabase admin
+//use admin
+//db.roles.insertMany([{value: "USER"}, {value: "ADMIN"}])
